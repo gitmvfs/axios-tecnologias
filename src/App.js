@@ -1,26 +1,20 @@
-import {  useEffect } from 'react'
-import api from './services/request_api';
+import CardTecnologia from './components/card';
 
-export default function App(){
-
-   // const [resultado,setResultado] = useState(null);
-
-    useEffect(() => {
-       
-    async function recuperarDados (){
-
-         await api.get('marcos')
-        .then((data) => {console.log(data)} )
-        .catch((erro) => {alert("Erro: "+ erro)} )
-    }
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-        recuperarDados()
-    }, []);
+function App() {
 
-    return(
-        <div>
-            <p> Olha o console</p>
-        </div>
-    )
+  
+  return (
+
+    <div className="App">
+        
+    <CardTecnologia/>
+     
+      
+    </div>
+  );
 }
+
+export default App;

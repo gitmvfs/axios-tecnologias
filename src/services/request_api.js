@@ -1,7 +1,8 @@
 import axios from 'axios'
 
  const api = axios.create({
-    baseURL: 'http://localhost:5000/'
+    baseURL: 'https://witty-petticoat-bee.cyclic.cloud/',
+    method: 'GET'
 })
 
 export default api
